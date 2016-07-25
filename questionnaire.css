@@ -1,0 +1,181 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+}
+
+h1 {
+	text-align: center;
+}
+
+fieldset {
+	border: none;
+	border-radius: 5px;
+	background-color: #B9E3FF;
+	max-width: 500px;
+	margin: 0 auto;
+	line-height: 1.7em;
+	background-image: url(https://cloud.githubusercontent.com/assets/1489880/17005128/8d3484aa-4ea6-11e6-99fa-17bc76dca1c2.png);
+	background-position: top 20% right 10%;
+	background-repeat: no-repeat;
+	background-size: 200px 100px;
+}
+
+legend {
+	background-color: #B9E3FF;
+	padding: 0 40px 20px;
+	text-align: center;
+	color: #FFF;
+	border-radius: 5px;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"] + label > span {
+	background-color: rgba(255,255,255,.0);
+	display: inline-block;
+	cursor: pointer;
+	letter-spacing: .2em;
+	width: 25px;
+	height: 25px;
+	margin-right: 8px;
+	vertical-align: middle;
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 4px #B9E3FF;
+	transition: background-color .5s ease;
+}
+
+#fire + label{
+	color: #FF5142;
+}
+#earth + label{
+	color: #FFB35A;
+}
+#metal + label{
+	color: #FFE955;
+}
+#wood + label{
+	color: #52C750;
+}
+#water + label{
+	color: #49B7FF;
+}
+#wind + label{
+	color: #BA53D5;
+}
+#other + label{
+	color: white;
+}
+
+#fire + label > span {
+	border: 3px solid #FF5142;
+}
+#earth + label > span {
+	border: 3px solid #FFB35A;
+}
+#metal + label > span {
+	border: 3px solid #FFE955;
+}
+#wood + label > span {
+	border: 3px solid #52C750;
+}
+#water + label > span {
+	border: 3px solid #49B7FF;
+}
+#wind + label > span {
+	border: 3px solid #BA53D5;
+}
+#other + label > span {
+	border: 3px solid white;
+}
+#fire:checked + label > span {
+	background-color: #FF5142;
+	background-size: 0 50%;
+}
+#earth:checked + label > span {
+	background-color: #FFB35A;
+	background-size: 0 50%;
+}
+#metal:checked + label > span {
+	background-color: #FFE955;
+	background-size: 0 50%;
+}
+#wood:checked + label > span {
+	background-color: #52C750;
+	background-size: 0 50%;
+}
+#water:checked + label > span {
+	background-color: #49B7FF;
+	background-size: 0 50%;
+}
+#wind:checked + label > span {
+	background-color: #BA53D5;
+	background-size: 0 50%;
+}
+#other:checked + label > span {
+	background-color: white;
+	background-size: 0 50%;
+}
+
+label {
+	cursor: pointer;
+}
+
+input[type="text"] {
+	margin-left: 25px;
+	display: block;
+	margin: 0 auto;
+	border: none;
+	font-size: 1.2rem;
+	padding: 5px;
+	background-color: #B9E3FF;
+	color: #FFF;
+	text-align: center;
+	border-radius: 5px;
+	pointer-events: none;
+	transition: background-color .5s ease;
+}
+#other + label + input::-webkit-input-placeholder {
+   color: #FFF;
+}
+
+#other + label + input:-moz-placeholder { /* Firefox 18- */
+   color: #FFF;  
+}
+
+#other + label + input::-moz-placeholder {  /* Firefox 19+ */
+   color: #FFF;  
+}
+
+#other + label + input:-ms-input-placeholder {  
+   color: #FFF;  
+}
+
+#other:checked + label + input {
+	pointer-events: auto;
+	background-color: #FFF;
+	color: #CACACA;
+}
+
+#other:checked + label + input::-webkit-input-placeholder {
+   color: #ECECEC;
+}
+
+#other:checked + label + input:-moz-placeholder { /* Firefox 18- */
+   color: #ECECEC;  
+}
+
+#other:checked + label + input::-moz-placeholder {  /* Firefox 19+ */
+   color: #ECECEC;  
+}
+
+#other:checked + label + input:-ms-input-placeholder {  
+   color: #ECECEC;  
+}
