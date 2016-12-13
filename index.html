@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="questionnaire.css">
 </head>
 <body>
-	<form action="questionnaire.html" method="post">
+	<form action="questionnaire.html" method="post" id="questionnaire">
 		<h1>Questionnaire</h1>
 		<fieldset>
 			<legend>Please Choose An Element</legend>
@@ -17,12 +17,15 @@
                 <input type="radio" id="wood" name="element" value="Wood"><label for="wood"><span></span>Wood</label><br />
                 <input type="radio" id="water" name="element" value="Water"><label for="water"><span></span>Water</label><br />
                 <input type="radio" id="wind" name="element" value="Wind"><label for="wind"><span></span>Wind</label><br />
-                <input type="radio" id="other" name="element" value=""><label for="other"><span></span>Other</label><input type="text" name="other_element" placeholder="Love">
+                <input type="radio" id="other" name="element" value="Other"><label for="other"><span></span>Other</label><input type="text" name="other_element" placeholder="Love">
+                <button type="submit">Submit</button>
 		</fieldset>
 	</form>
 	<ul class="navigation">
 		<li><a href="https://brianhernandez.github.io/introduction-to-css__multi-page-web-site/forms.html">Form Projects Homepage</a></li>
 		<li><a href="https://brianhernandez.github.io/introduction-to-css__multi-page-web-site/">Projects Homepage</a></li>
 	</ul>
+  <script type="text/javascript" src="validator.js"></script>
+  <script type="text/javascript" src="questionnaire-validate.js"></script>
 </body>
 </html>
